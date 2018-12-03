@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap-flex.css">
+<!--<link rel="stylesheet" href="css/bootstrap-select-modificado.css">-->
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="header clearfix"> 
+  
+  <!--HEADER DESKTOP-->
+  
+  <div class="col_header_top header_desktop hidden-sm-down clearfix">
+    <div class="container-fluid">
+      <div class="col_logo clearfix"> <a href="index.html" class="logo"><img src="img/logo.svg" alt="Simultanews"/></a> </div>
+      <div class="col_nav clearfix">
+        <nav class="menu_principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ver-suscriptores.html">Suscriptores</a></li>
+            <li class="seleccionado"><a href="ver-crear-campania.html">Campañas</a></li>
+            <li><a href="ver-reportes.html">Reportes</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col_ayuda"> <a href="#"><span class="fa fa-question-circle-o"></span></a> </div>
+      <div class="col_cuenta">
+        <div class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mi Cuenta</a>
+          <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header-top --> 
+    
+  </div>
+  <!-- / container -->
+  
+  <div class="sub_header_full clearfix hidden-sm-down">
+    <div class="container-fluid">
+      <div class="col_sub_nav clearfix">
+        <ul class="sub_nav sub_nav_desktop hidden-sm-down">
+          <li class="seleccionado"><a href="ver-crear-campania.html">Ver y Crear</a></li>
+          <li><a href="plantillas-campanias.html">Plantillas</a></li>
+          <li><a href="archivos-campanias.html">Archivos</a></li>
+          <li><a href="automaticas-campanias.html">Automáticas</a></li>
+        </ul>
+      </div>
+      <div class="menu_lista hidden-sm-down">
+        <div class="btn-group menu">
+          <select class="selectpicker" data-style="btn-secondary" data-size="5" data-dropdown-align-right="true">
+            <option selected>Colegio de Martilleros Lorem Ipsum Sitamet</option>
+            <option value="1">Lorem ipsum lista 2</option>
+            <option value="2">Lorem ipsum lista 3</option>
+            <option value="3">Lorem ipsum lista 4</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /sub-header--> 
+  
+  <!--HEADER MOVIL-->
+  <div class="header_mobile hidden-md-up">
+    <div class="container-fluid">
+      <div class="col_menu_mobile ">
+        <button class="js-menu-show menu_icon"><span class="fa fa-navicon"></span></button>
+      </div>
+      <div class="titulo_seccion_mobile">Ver Campañas</div>
+      <div class="col_logo clearfix"> <a href="#" class="logo"><img src="img/logo.svg" alt="Simultanews"/></a> </div>
+    </div>
+  </div>
+  
+  <!-- SIDENAV -->
+  <aside class="js-side-nav side-nav">
+    <nav class="js-side-nav-container side-nav__container">
+      <button class="js-menu-hide side-nav__hide"><span class="fa fa-close"></span></button>
+      <header class="side-nav__header">
+        <select class="custom-select menu_lista_mobile" >
+          <option selected>Colegio de Martilleros Lorem Ipsum Sitamet</option>
+          <option value="1">Lorem ipsum lista 2</option>
+          <option value="2">Lorem ipsum lista 3</option>
+          <option value="3">Lorem ipsum lista 4</option>
+        </select>
+      
+      
+      
+      
+      </header>
+      
+      <ul class="side-nav__content">
+        <li class="item_principal sin_submenu"><a href="index.html">Inicio<span class="fa  fa-caret-right"></span></a></li>
+        <li class="item_principal"><a href="#">Suscriptores<span class="fa  fa-caret-down"></span></a>
+          <div class="sub_nav_mobile">
+            <ul>
+              <li class="sub_item"><a href="ver-suscriptores.html">Ver Suscriptores</a></li>
+              <li class="sub_item seleccionado"><a href="agregar-suscriptores.html">Agregar Suscriptores</a></li>
+              <li class="sub_item"><a href="formularios-suscriptores.html">Formularios</a></li>
+              <li class="sub_item"><a href="segmentos-suscriptores.html">Segmentos</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="item_principal seleccionado"><a href="#">Campañas<span class="fa  fa-caret-down"></span></a>
+          <div class="sub_nav_mobile">
+            <ul>
+              <li class="sub_item"><a href="ver-crear-campania.html">Ver y Crear</a></li>
+          <li class="sub_item seleccionado"><a href="plantillas-campanias.html">Plantillas</a></li>
+          <li class="sub_item"><a href="archivos-campanias.html">Archivos</a></li>
+          <li class="sub_item"><a href="automaticas-campanias.html">Automáticas</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="item_principal"><a href="#">Reportes<span class="fa  fa-caret-down"></span></a>
+          <div class="sub_nav_mobile">
+            <ul>
+              <li class="sub_item"><a href="#">item</a></li>
+              <li class="sub_item seleccionado"><a href="#">item</a></li>
+              <li class="sub_item"><a href="#">item</a></li>
+              <li class="sub_item"><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="item_principal sin_submenu"><a href="mi-cuenta.html">Mi Cuenta<span class="fa  fa-caret-right"></span></a></li>
+      </ul>
+    </nav>
+  </aside>
+</header>
+<div class="container-fluid">
+  <section class="main_sub_header clearfix">
+    <h1 class="titulo_seccion hidden-sm-down">Ver y Crear Campañas</h1>
+    <div class="col_btn hidden-sm-down">
+      <button type="button" class="btn btn-primary btn-bold"><span class="fa fa-plus fa_left"></span>Nueva Campaña</button>
+    </div>
+  </section>
+  <section class="main clearfix">
+    <div class="box box_buscador">
+    
+      <div class="box_texto hidden-sm-down">
+        <p>Viendo el total de las <strong>42 campañas</strong> de la lista</p>
+      </div>
+      <!-- /box-texto-->
+      
+      <div class="box_campo_busqueda">
+      
+      
+      
+        <div class="input-group">
+          <button class="input-group-addon btn btn-custom hidden-sm-down" name="accion_mostrar_filtros" id="mostrar_filtros"><span class="fa fa-caret-down fa-lg"></span></button>
+          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nombre, asunto o contenido">
+          <button class="input-group-addon btn btn-custom " name="accion_buscar"><span class="fa fa-search fa-lg"></span></button>
+        </div>
+        
+        <!-- / -->
+        
+        <div class="box_tipo_campania hidden-md-up">
+          <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+            <option selected>Todas las Campañas</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        
+        <!-- / -->
+        
+        
+        <div class="dropdown-menu box_filtros hidden-sm-down" role="menu">
+         
+         <button type="button" class="close" aria-label="Cerrar" title="Cerrar y no aplicar filtros"><span aria-hidden="true">&times;</span></button>
+         
+          <div class="container">
+            <div class="form-group row">
+              <label for="" class="col-lg-2 col-md-12 col-form-label">Destinatarios</label>
+              <div class="col-lg-9 col-md-12">
+                <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+                  <option value="0" selected="">Mostrar todas las campañas</option>
+                  <option value="1">Opcion 2</option>
+                  <option value="2">Opcion 3</option>
+                </select>
+              </div>
+              </div>
+              
+             <div class="form-group row">
+              <label for="" class="col-lg-2 col-md-12 col-form-label">Estados</label>
+              <div class="col-lg-9 col-md-12">
+                <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+                  <option value="0" selected="">Todos los estados</option>
+                  <option value="1">Opcion 2</option>
+                  <option value="2">Opcion 3</option>
+                </select>
+              </div>
+              </div>
+              
+           
+            <div class="box_filtros_footer">
+            <button type="submit" class="btn btn-primary mr-2">Aplicar Filtros</button>
+            <button type="submit" class="btn btn-secondary">Reestablecer</button>
+            </div>
+            
+            
+           </div>  
+            
+            
+          </div>
+        <!-- /dropdown-->
+          
+          
+       
+      </div>
+      <!-- /box-campo-busqueda--> 
+      
+      <div class="box_block">
+      <div class="alert alert-normal alert-dismissible fade show" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Filtrado por:</strong>
+  Segmento: Lorem Ipsum, Segmento deportivo. 
+</div>
+      </div><!-- box-block -->
+      
+    </div>
+    <!-- /box-buscador-->
+    
+    <div class="box_texto_mobile hidden-md-up">
+      <p>Viendo el total de las <strong>42 campañas</strong> de la lista</p>
+    </div>
+    <!-- /box-texto-->
+    
+    <div class="box_ordenar_items hidden-sm-down">
+      <div class="items_izq">
+        <div class="box box_item box_checkbox">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input indeterminate-checkbox">
+            <span class="custom-control-indicator"></span> </label>
+        </div>
+        <div class="box_item box_boton_accion">
+          <button type="button" class="btn btn-secondary">Eliminar</button>
+        </div>
+      </div>
+      <div class="items_der">
+        <div class="box_item  box_boton_ordenar_por">
+          <select class="selectpicker" data-style="btn-secondary"  data-width="fit">
+            <option selected>Fecha</option>
+            <option>Opcion 2 mas largo</option>
+            <option>Opcion 3 menos</option>
+          </select>
+          <button type="button" class="btn btn-secondary"><span class="fa fa-long-arrow-up fa-lg"></span></button>
+        </div>
+        <div class="box_item box_boton_mostrar_cantidad">
+          <select class="selectpicker" data-style="btn-secondary"  data-width="fit">
+            <option selected>20</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- *box_ordenar_tablas-->
+    
+    
+    <section class="ver_campanias">
+    
+    <div class="box box_ver_campanias">
+      <div class="box_columnas">
+        <div class="col_1 hidden-sm-down">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-indicator"></span> </label>
+        </div>
+        <!-- /col-1 -->
+        
+        <div class="col_2">
+          <div class="box_text_content modificado_con_graficos">
+            <div class="box_top clearfix">
+              <div class="box_top_text">
+                <h3 class="titulo"><a href="#">Novedades Verano en Lorem Ipsum</a></h3>
+              </div>
+            </div>
+            <div class="box_middle">
+              <div class="box_middle_info">
+                <p>Asunto: Lorem ipsum dolor sit amet</p>
+                <p>Creada el 22/01/2017 a las 17:02</p>
+                <p>Segmento: Lorem impsum dolor</p>
+                <p>Enviando...</p>
+              </div>
+            </div>
+          </div>
+          <!-- /box-text-content -->
+          
+          <div class="box_estado_envio">
+            <p class="texto">Enviando <span class="porciento">80%</span></p>
+            <div class="progress">
+            <div class="progress-bar bg-success" style="width:80%;"></div>
+            </div>
+            <div class="box_estado_btn"> <a href="#" class="btn btn-secondary"><span class="fa fa-pause fa_left_5"></span>Pausar</a> <a href="#" class="btn btn-secondary"><span class="fa fa-ban fa_left_5"></span>Cancelar</a> </div>
+          </div>
+        </div>
+        <!-- /col-2 -->
+        
+        <div class="col_3">
+          <div class="box_top_menu">
+            <div class="dropdown"> <a href="#" class="icono_menu" data-toggle="dropdown"><span class="fa fa-ellipsis-v"></span></a>
+              <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="#">Ir al reporte</a> <a class="dropdown-item" href="ver-detalle-campania.html">Ver detalles de la campaña</a> <a class="dropdown-item" href="#">Duplicar y Reenviar</a> <a class="dropdown-item" href="#">Duplicar para otra lista</a> <a class="dropdown-item" href="#">Eliminar</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- /col-3 --> 
+        
+      </div>
+      <div class="box_footer">
+        <div class="estado_campania"> <span class="texto_estado_envio hidden-sm-down">Enviando</span>
+          <p><span class="fa fa-send"></span></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- *************** / Box 1 ******************************* -->
+    
+    <div class="box box_ver_campanias">
+      <div class="box_columnas">
+        <div class="col_1 hidden-sm-down">
+          <input type="checkbox">
+        </div>
+        <!-- /col-1 -->
+        
+        <div class="col_2">
+          <div class="box_text_content modificado_con_graficos">
+            <div class="box_top clearfix">
+              <div class="box_top_text">
+                <h3 class="titulo"><a href="#">Nombre de la campaña nananana</a></h3>
+              </div>
+            </div>
+            <div class="box_middle">
+              <div class="box_middle_info">
+                <p>Asunto: Lorem ipsum dolor sit amet</p>
+                <p>Creada el 22/01/2017 a las 17:02</p>
+                <p>Segmento: Lorem impsum dolor</p>
+                <p>Envío finalizado hace 2 días</p>
+              </div>
+            </div>
+          </div>
+          <!-- /box-text-content -->
+          
+          <div class="box_graficos">
+            <div class="col_grafico">
+              <div class="numero">235.568</div>
+              <div class="label">Enviados</div>
+            </div>
+            <div class="col_grafico">
+              <div class="numero">15%</div>
+              <div class="label">Abiertos</div>
+            </div>
+            <div class="col_grafico">
+              <div class="numero">10%</div>
+              <div class="label">Clics</div>
+            </div>
+          </div>
+        </div>
+        <!-- /col-2 -->
+        
+        <div class="col_3">
+          <div class="box_top_menu">
+            <div class="dropdown"> <a href="#" class="icono_menu" data-toggle="dropdown"><span class="fa fa-ellipsis-v"></span></a>
+              <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="#">Ir al reporte</a> <a class="dropdown-item" href="#">Ver detalles de la campaña</a> <a class="dropdown-item" href="#">Duplicar y Reenviar</a> <a class="dropdown-item" href="#">Duplicar para otra lista</a> <a class="dropdown-item" href="#">Eliminar</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- /col-3 --> 
+        
+      </div>
+      <div class="box_footer">
+        <div class="estado_campania"> <span class="texto_estado_envio hidden-sm-down">Enviada</span>
+          <p><span class="fa fa-check"></span></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- *************** / Box 2 ******************************* -->
+    
+    <div class="box box_ver_campanias">
+      <div class="box_columnas">
+        <div class="col_1 hidden-sm-down">
+          <input type="checkbox">
+        </div>
+        <!-- /col-1 -->
+        
+        <div class="col_2">
+          <div class="box_text_content modificado_con_graficos">
+            <div class="box_top clearfix">
+              <div class="box_top_text">
+                <h3 class="titulo"><a href="#">Lorem impsum dolor sit amet</a></h3>
+              </div>
+            </div>
+            <div class="box_middle">
+              <div class="box_middle_info">
+                <p>Asunto: Lorem ipsum dolor sit amet</p>
+                <p>Creada el 22/01/2017 a las 17:02</p>
+                <p>Segmento: Lorem impsum dolor</p>
+                <p class="pasos_borrador"><a href="#">Asunto y Remitente</a> > <a href="#">Contenido</a> > <a href="#">Destinatarios</a> > <a href="#">Envío</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- /box-text-content --> 
+          
+          <!-- <div class="box_estado_envio">
+                    <p class="texto_estado_envio">Enviando <span class="porciento">80%</span></p>
+                    <progress class="progress progress-success" value="80" max="100"></progress>
+                    <div class="box_estado_btn"> <a href="#" class="btn btn-secondary"><span class="fa fa-pause fa_left"></span>Pausar</a> <a href="#" class="btn btn-secondary"><span class="fa fa-ban fa_left"></span>Cancelar</a> </div>
+                  </div>--> 
+          
+        </div>
+        <!-- /col-2 -->
+        
+        <div class="col_3">
+          <div class="box_top_menu">
+            <div class="dropdown"> <a href="#" class="icono_menu" data-toggle="dropdown"><span class="fa fa-ellipsis-v"></span></a>
+              <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="#">Ir al reporte</a> <a class="dropdown-item" href="#">Ver detalles de la campaña</a> <a class="dropdown-item" href="#">Duplicar y Reenviar</a> <a class="dropdown-item" href="#">Duplicar para otra lista</a> <a class="dropdown-item" href="#">Eliminar</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- /col-3 --> 
+        
+      </div>
+      <div class="box_footer">
+        <div class="estado_campania"> <span class="texto_estado_envio hidden-sm-down">Borrador</span>
+          <p><span class="fa fa-file-o"></span></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- *************** / Box 3 ******************************* -->
+    
+    <div class="box box_ver_campanias">
+      <div class="box_columnas">
+        <div class="col_1 hidden-sm-down">
+          <input type="checkbox">
+        </div>
+        <!-- /col-1 -->
+        
+        <div class="col_2">
+          <div class="box_text_content modificado_con_graficos">
+            <div class="box_top clearfix">
+              <div class="box_top_text">
+                <h3 class="titulo"><a href="#">Lorem impsum dolor sit amet</a></h3>
+              </div>
+            </div>
+            <div class="box_middle">
+              <div class="box_middle_info">
+                <p>Asunto: Lorem ipsum dolor sit amet</p>
+                <p>Creada el 22/01/2017 a las 17:02</p>
+                <p>Segmento: Lorem impsum dolor</p>
+                <p class="texto_destacado">Comenzará a enviarse en 2 días y 4 horas</p>
+              </div>
+            </div>
+          </div>
+          <!-- /box-text-content --> 
+          
+          <!-- <div class="box_estado_envio">
+                    <p class="texto_estado_envio hidden-sm-down">Enviando <span class="porciento">80%</span></p>
+                    <progress class="progress progress-success" value="80" max="100"></progress>
+                    <div class="box_estado_btn"> <a href="#" class="btn btn-secondary"><span class="fa fa-pause fa_left"></span>Pausar</a> <a href="#" class="btn btn-secondary"><span class="fa fa-ban fa_left"></span>Cancelar</a> </div>
+                  </div>--> 
+          
+        </div>
+        <!-- /col-2 -->
+        
+        <div class="col_3">
+          <div class="box_top_menu">
+            <div class="dropdown"> <a href="#" class="icono_menu" data-toggle="dropdown"><span class="fa fa-ellipsis-v"></span></a>
+              <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="#">Ver Campaña</a> <a class="dropdown-item" href="#">Replicar</a> <a class="dropdown-item" href="#">Ir al Reporte</a> <a class="dropdown-item" href="#">Eliminar</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- /col-3 --> 
+        
+      </div>
+      <div class="box_footer">
+        <div class="estado_campania"> <span class="texto_estado_envio hidden-sm-down">Programada</span>
+          <p><span class="fa fa-calendar"></span></p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- *************** / Box 4 ******************************* -->
+    
+    <button type="button" class="btn btn-custom btn-block btn-bold">Mostrar próximos 10 resultados <span class="fa fa-angle-down fa_right_10"></span></button>
+  
+  	</section><!-- /ver_campanias-->
+  </section>
+</div>
+<!-- /container-->
+
+<footer class="footer clearfix">
+  <div class="container-fluid">
+    <nav class="footer_nav clearfix"> <a href="anti-spam.html">Anti Spam</a> <a href="politica-de-privacidad.html">Política de Privacidad</a> <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+      <p>&copy;2002-2017</p>
+    </nav>
+  </div>
+  <div class="footer_logo"><img src="img/logo-footer.svg" /></div>
+</footer>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script> 
+
+<!-- Sidenav / Focus offcanvas elements --> 
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap-select-modificado.js" type="text/javascript"></script>
+<script src='js/side-nav.js' type="text/javascript"></script>  
+<script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>
