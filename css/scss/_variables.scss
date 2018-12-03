@@ -1,0 +1,33 @@
+
+/* Grises */
+$color-1: #847f7b; /* Cambio #847f7b */
+$color-2: #999492; 
+$color-3: #b2aeaa;
+$color-4: #e5dfd8;
+$color-5: #f7f1ed;
+
+/* Colores */
+$color-n: #ed8134; /* Naranja */
+$color-v: #6c994f; /* Verde */
+$color-r: #af3105; /* Rojo */
+$color-m: #a35a29; /* Marron */
+$color-a: #046d89; /* Azul */
+$color-link: #046d89; /* Links */
+$blanco: #ffffff;
+$radial-enviados: #f2a771;
+$radial-abiertos: #6c994f;
+$radial-clicks:#046d89;
+
+/* Botones */
+$redondeado-normal : 5px;
+
+/* Bordes */
+$color-borde-normal: #e5dfd8;
+
+/* Paddings */
+$padding-lateral: 20px;
+$padding-top: 15px;
+
+@media screen and (max-width:767px){ 
+	$padding-lateral: 10px;
+	}

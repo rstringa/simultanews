@@ -1,0 +1,81 @@
+
+/* FORMS */
+::-webkit-input-placeholder, .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-style:italic;
+  color:$color-2;
+}
+.form-control::-moz-placeholder, ::-moz-placeholder { /* Firefox 19+ */
+  font-style:italic;
+  color:$color-2;
+}
+.form-control:-ms-input-placeholder, :-ms-input-placeholder { /* IE 10+ */
+  font-style:italic;
+  color:$color-2;
+}
+.form-control:-moz-placeholder, :-moz-placeholder { /* Firefox 18- */
+  font-style:italic;
+  color:$color-2;
+}
+.form-control:placeholder, :placeholder {
+   font-style:italic;
+  color:$color-2;	
+	}
+
+.form-control {
+	padding: 0.75rem 0.75rem;
+    font-size: 1rem;
+	border-radius:$redondeado-normal;
+	color:$color-2;
+
+}
+.form-control:focus { color:$color-1;} 
+.custom-control {
+    position: relative;
+    display: inline;
+    padding-left: 1.5rem;
+    cursor: pointer;
+    top: -3px;
+}
+button,input, optgroup, select, textarea {
+  font-family: inherit;
+}
+input:not(button):hover,
+input:not(submit):hover,
+select:hover, 
+textarea:hover { border-color:$color-3!important;}
+
+input:not(button):focus,
+input:not(submit):focus, 
+select:focus,
+textarea:focus { box-shadow:0 2px 0 0px rgba(66,66,66,0.15);
+border-color:$color-3!important;
+}
+
+label {margin-bottom: .15rem;}
+.form-group label { margin-left:3px;}
+
+/* SELECTS */
+select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+.custom-select.btn { padding-right:2rem; }
+
+/* Bootsrap Select para hacerlo tipo Dropdown */
+.bootstrap-select .dropdown-menu { }
+
+/*.bootstrap-select .dropdown-menu .dropdown-item { font-size:1rem; padding:7px 15px;}*/
+.bootstrap-select .dropdown-menu .dropdown-item:focus { } 
+
+/* CUSTOM CONTROLS */
+.custom-control-indicator { width:20px; height:20px; background-size: 80%; background-color:#fff; border:1px solid $color-3;}
+.custom-control-input:checked ~ .custom-control-indicator,
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator  {
+    color: #fff;
+    background-color: $color-n;
+}
+.custom-control-input:focus ~ .custom-control-indicator {
+   /* box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem $color-2; */
+   box-shadow:none;
+   border:1px solid $color-2;
+}
+

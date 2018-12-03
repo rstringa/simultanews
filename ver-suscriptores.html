@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap-flex.css">
+<!--<link rel="stylesheet" href="css/bootstrap-select-modificado.css">-->
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="header clearfix"> 
+  
+  <!--HEADER DESKTOP-->
+  
+  <div class="col_header_top header_desktop hidden-sm-down clearfix">
+    <div class="container-fluid">
+      <div class="col_logo clearfix"> <a href="index.html" class="logo"><img src="img/logo.svg" alt="Simultanews"/></a> </div>
+      <div class="col_nav clearfix">
+        <nav class="menu_principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="seleccionado"><a href="ver-suscriptores.html">Suscriptores</a></li>
+            <li><a href="ver-crear-campania.html">Campañas</a></li>
+            <li><a href="ver-reportes.html">Reportes</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col_ayuda"> <a href="#"><span class="fa fa-question-circle-o"></span></a> </div>
+      <div class="col_cuenta">
+        <div class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mi Cuenta</a>
+          <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a> </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header-top --> 
+    
+  </div>
+  <!-- / container -->
+  
+  <div class="sub_header_full clearfix hidden-sm-down">
+    <div class="container-fluid">
+      <div class="col_sub_nav clearfix">
+        <ul class="sub_nav sub_nav_desktop hidden-sm-down">
+          <li class="seleccionado"><a href="ver-suscriptores.html">Ver Suscriptores</a></li>
+          <li><a href="agregar-suscriptores.html">Agregar Suscriptores</a></li>
+          <li><a href="formularios-suscriptores.html">Formularios</a></li>
+          <li><a href="segmentos-suscriptores.html">Segmentos</a></li>
+        </ul>
+      </div>
+      <div class="menu_lista hidden-sm-down">
+        <div class="btn-group menu">
+          <select class="selectpicker" data-style="btn-secondary" data-size="5" data-dropdown-align-right="true">
+            <option selected>Colegio de Martilleros Lorem Ipsum Sitamet</option>
+            <option value="1">Lorem ipsum lista 2</option>
+            <option value="2">Lorem ipsum lista 3</option>
+            <option value="3">Lorem ipsum lista 4</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /sub-header--> 
+  
+  <!--HEADER MOVIL-->
+  <div class="header_mobile hidden-md-up">
+    <div class="container-fluid">
+      <div class="col_menu_mobile ">
+        <button class="js-menu-show menu_icon"><span class="fa fa-navicon"></span></button>
+      </div>
+      <div class="titulo_seccion_mobile">Ver Suscriptores</div>
+      <div class="col_logo clearfix"> <a href="#" class="logo"><img src="img/logo.svg" alt="Simultanews"/></a> </div>
+    </div>
+  </div>
+  
+  <!-- SIDENAV -->
+  <aside class="js-side-nav side-nav">
+    <nav class="js-side-nav-container side-nav__container">
+      <button class="js-menu-hide side-nav__hide"><span class="fa fa-close"></span></button>
+      <header class="side-nav__header">
+        <select class="custom-select menu_lista_mobile" >
+          <option selected>Colegio de Martilleros Lorem Ipsum Sitamet</option>
+          <option value="1">Lorem ipsum lista 2</option>
+          <option value="2">Lorem ipsum lista 3</option>
+          <option value="3">Lorem ipsum lista 4</option>
+        </select>
+      
+      
+      
+      
+      </header>
+      
+      <ul class="side-nav__content">
+        <li class="item_principal sin_submenu"><a href="index.html">Inicio<span class="fa  fa-caret-right"></span></a></li>
+        <li class="item_principal"><a href="#">Suscriptores<span class="fa  fa-caret-down"></span></a>
+          <div class="sub_nav_mobile">
+            <ul>
+              <li class="sub_item"><a href="ver-suscriptores.html">Ver Suscriptores</a></li>
+              <li class="sub_item seleccionado"><a href="agregar-suscriptores.html">Agregar Suscriptores</a></li>
+              <li class="sub_item"><a href="formularios-suscriptores.html">Formularios</a></li>
+              <li class="sub_item"><a href="segmentos-suscriptores.html">Segmentos</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="item_principal seleccionado"><a href="#">Campañas<span class="fa  fa-caret-down"></span></a>
+          <div class="sub_nav_mobile">
+            <ul>
+              <li class="sub_item"><a href="ver-crear-campania.html">Ver y Crear</a></li>
+          <li class="sub_item seleccionado"><a href="plantillas-campanias.html">Plantillas</a></li>
+          <li class="sub_item"><a href="archivos-campanias.html">Archivos</a></li>
+          <li class="sub_item"><a href="automaticas-campanias.html">Automáticas</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="item_principal"><a href="#">Reportes<span class="fa  fa-caret-down"></span></a>
+          <div class="sub_nav_mobile">
+            <ul>
+              <li class="sub_item"><a href="#">item</a></li>
+              <li class="sub_item seleccionado"><a href="#">item</a></li>
+              <li class="sub_item"><a href="#">item</a></li>
+              <li class="sub_item"><a href="#">item</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="item_principal sin_submenu"><a href="mi-cuenta.html">Mi Cuenta<span class="fa  fa-caret-right"></span></a></li>
+      </ul>
+    </nav>
+  </aside>
+</header>
+<div class="container-fluid">
+  <section class="main_sub_header clearfix">
+    <h1 class="titulo_seccion hidden-sm-down">Ver Suscriptores</h1>
+    
+  </section>
+  <section class="main clearfix">
+    <div class="box box_buscador">
+    
+      <div class="box_texto hidden-sm-down">
+        <p>Total de suscriptores activos de la lista: 324.845</p>
+      </div>
+      <!-- /box-texto-->
+      
+      <div class="box_campo_busqueda">
+      
+      
+      
+        <div class="input-group">
+          <button class="input-group-addon btn btn-custom hidden-sm-down" name="accion_mostrar_filtros" id="mostrar_filtros"><span class="fa fa-caret-down fa-lg"></span></button>
+          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar por Email, Nombre o Apellido">
+          <button class="input-group-addon btn btn-custom " name="accion_buscar"><span class="fa fa-search fa-lg"></span></button>
+        </div>
+        
+        <!-- / -->
+        
+        <div class="box_tipo_campania hidden-md-up">
+          <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+            <option selected>Suscriptores Activos</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        
+        <!-- / -->
+        
+        
+        <div class="dropdown-menu box_filtros hidden-sm-down" role="menu">
+         
+         <button type="button" class="close" aria-label="Cerrar" title="Cerrar y no aplicar filtros"><span aria-hidden="true">&times;</span></button>
+         
+          <div class="container">
+          
+            <div class="form-group row">
+              <label for="" class="col-lg-3 col-md-12 col-form-label">Fecha de alta:</label>
+              <div class="col-lg-8 col-md-12">
+                <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+                  <option value="0" selected>Cualquier fecha</option>
+                  <option value="1">Hoy</option>
+                  <option value="2">Ayer</option>
+                  <option value="3">Ultimos 7 días</option>
+                  <option value="4">Ultimos 30 días</option>
+                  <option value="5">Este año</option>
+                  <option value="6">Seleccionar Fechas</option>
+                </select>
+              </div>
+              </div>
+              
+            <div class="form-group row">
+              <label for="" class="col-lg-3 col-md-12 col-form-label">Origen:</label>
+              <div class="col-lg-8 col-md-12">
+                <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+                  <option value="0" selected>Todos</option>
+                  <option value="1">Formulario Web</option>
+                  <option value="2">Formulario en Facebook</option>
+                  <option value="3">Importación</option>
+                  <option value="4">Agregado manualmente</option>
+                </select>
+              </div>
+              </div>
+              
+            <div class="form-group row">
+              <label for="" class="col-lg-3 col-md-12 col-form-label">Segmento:</label>
+              <div class="col-lg-8 col-md-12">
+                <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+                  <option value="0" selected>Todos los segmentos</option>
+                  <option value="1">Nombre del segmento 1</option>
+                  <option value="2">Nombre del segmento 2</option>
+                </select>
+              </div>
+              </div> 
+              
+              <div class="form-group row">
+              <label for="" class="col-lg-3 col-md-12 col-form-label">Rebotes:</label>
+              <div class="col-lg-8 col-md-12">
+                <select class="selectpicker" data-style="btn-secondary" data-width="100%">
+                  <option value="0" selected>Cualquier fecha</option>
+                  <option value="1">Hoy</option>
+                  <option value="2">Ayre</option>
+                </select>
+              </div>
+              </div>  
+                
+              
+             
+              
+           
+            <div class="box_filtros_footer">
+            <button type="submit" class="btn btn-primary mr-2">Aplicar Filtros</button>
+            <button type="submit" class="btn btn-secondary">Reestablecer</button>
+            </div>
+            
+            
+           </div>  
+            
+            
+          </div>
+        <!-- /dropdown-->
+          
+          
+       
+      </div>
+      <!-- /box-campo-busqueda--> 
+      
+ <!--      <div class="box_block">
+      <div class="alert alert-normal alert-dismissible fade in" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Filtrado por:</strong>
+  Segmento: Lorem Ipsum, Segmento deportivo. 
+</div>
+      </div><!-- box-block -->
+      
+    </div>
+    <!-- /box-buscador-->
+    
+    <div class="box_texto_mobile hidden-md-up">
+      <p>Total de suscriptores activos de la lista: 324.845</p>
+    </div>
+    <!-- /box-texto-->
+    
+    <div class="box_ordenar_items">
+      <div class="items_izq">
+        
+        
+        <div class="box_item  hidden-sm-down">
+          <select class="selectpicker " data-style="btn-secondary"  data-width="fit">
+            <option selected>Suscriptores Activos</option>
+            <option>Opcion 2 mas largo</option>
+            <option>Opcion 3 menos</option>
+          </select>
+        </div>
+        
+        <div class="box_item">
+        <button type="button" class="btn btn-secondary" title="Exportar suscriptores seleccionados"><span class="fa fa-download fa-lg"></span></button>
+         </div>
+        
+        
+         <div class="box_item hidden-sm-down">
+          <select class="selectpicker " data-style="btn-secondary"  data-width="fit">
+            <option selected>Desuscribir</option>
+            <option>Opcion 2 mas largo</option>
+            <option>Opcion 3 menos</option>
+          </select>
+        </div>
+        
+       
+        
+      </div><!-- /items_izq-->
+      
+      
+      <div class="items_der">
+        
+        <div class="box_item hidden-sm-down">
+          <select class="selectpicker" data-style="btn-secondary"  data-width="fit">
+            <option selected>20</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- /box_ordenar_tablas-->
+    
+    
+<section class="ver_suscriptores">
+
+ <div class="box_table  table-responsive">
+        <table class="table sort_table">
+          <thead class="thead_default">
+            <tr>
+              <th>
+              <div class="dropdown"> 
+              <button type="button" class="icono_dropdown" data-toggle="dropdown"><span class="fa fa-caret-down"></span></button>
+              <div class="dropdown-menu"> 
+               <a class="dropdown-item" href="#">Seleccionar Visibles</a>
+               <a class="dropdown-item" href="#">Seleccionar Todos</a> 
+               <a class="dropdown-item" href="#">Deseleccionar Todos</a> 
+              </div>
+       	 </div>
+        
+              
+              </th>
+              <th class="text-left text_wrap">Email</th>
+              <th class="text_wrap">Nombre<span class="hidden-md-down"> y Apellido</span></th>
+              <th class="seleccionado asc"><span class="hidden-md-down">Fecha de</span> Alta</th>
+              <th>Origen</th>
+              <th><!-- desc-->Rebotes</th>
+              
+             
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+             <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr> 
+            <tr>
+              <td>
+              <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span> </label>
+              </td>
+              <td class="text-left"><a href="ver-suscriptor.html">maria.gonzalez@dominio.com</a></td>
+              <td><a href="ver-suscriptor.html">María Andrea González</a></td>
+              <td>11/01/2017</td>
+              <td>Importación</td>
+              <td>0</td>
+            </tr>
+           
+           
+           
+           
+          </tbody>
+          
+        </table>
+        
+
+
+</div>    
+        
+    
+    
+
+    
+    
+    
+    
+    </section>
+    
+  <!-- /ver_suscriptores-->   
+    <button type="button" class="btn btn-custom btn-block btn-bold">Mostrar próximos 20 resultados <span class="fa fa-angle-down fa_right_10"></span></button>
+  </section>
+ <!-- / main --> 
+</div>
+<!-- /container-->
+
+<footer class="footer clearfix">
+  <div class="container-fluid">
+    <nav class="footer_nav clearfix"> <a href="anti-spam.html">Anti Spam</a> <a href="politica-de-privacidad.html">Política de Privacidad</a> <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+      <p>&copy;2002-2017</p>
+    </nav>
+  </div>
+  <div class="footer_logo"><img src="img/logo-footer.svg" /></div>
+</footer>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script> 
+
+<!-- Sidenav / Focus offcanvas elements --> 
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap-select-modificado.js" type="text/javascript"></script>
+<script src='js/side-nav.js' type="text/javascript"></script>  
+<script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>

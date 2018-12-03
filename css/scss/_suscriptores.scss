@@ -1,0 +1,57 @@
+/* DATOS LISTA */
+/* Importar desde archivo - Paso 2 */
+
+.datos_lista { border-radius:$redondeado-normal; overflow:hidden; border:1px solid $color-4; padding:15px; margin-bottom:20px;}
+.datos_lista_header { background:$color-4; color:$color-1; font-size:1.1rem; padding:7px 15px; margin:-15px -15px 15px -15px; }
+.datos_lista_body li{ border-bottom:1px solid $color-4;padding:0.55rem 0;}
+.box_botones .btn_cancelar { margin-left:10px;}
+@include screen('mobile'){
+.box_corresponde_a { margin-top:-10px; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid $color-1;}
+.box_botones .btn_cancelar { display:block; margin-top:20px; margin-left:0;}
+}
+
+/* VER SUSCRIPTOR */
+/* Box detalle */
+.suscriptor_detalle { display:flex; }
+.suscriptor_detalle .box_foto {  }
+.suscriptor_detalle .box_foto .foto { width:100px; margin-right:20px; overflow:hidden; }
+.suscriptor_detalle .box_foto .foto img { max-width:100%; height:auto; border-radius:$redondeado-normal; overflow:hidden; border:1px solid $color-4; }
+.suscriptor_detalle .box_datos { flex:1 1 auto; width:45%; padding-right:40px;}
+.suscriptor_detalle .box_graficos {flex:1 1 auto; display:flex; justify-content: space-around;padding-top:10px;  }
+.suscriptor_detalle .box_graficos .col_grafico { margin-left:5px; text-align:center; font-size:0.95rem; }
+
+@include screen('mobile'){
+.sub_header_ver_suscriptor .bootstrap-select{ max-width:100%;width: auto!important;}	
+.suscriptor_detalle { flex-direction:column; }
+.suscriptor_detalle .box_foto { display:flex; margin-bottom:20px;}
+.suscriptor_detalle .box_foto .foto { width:70px;}
+.suscriptor_detalle .box_datos { margin-bottom:10px; padding-right:0px; width:100%;}	
+.suscriptor_detalle .box_graficos .col_grafico:first-child { margin-left:0px; }	
+.suscriptor_detalle .foto_datos { font-size:1.1rem;}
+.suscriptor_detalle .foto_datos .titulo_nombre { font-weight:600; display:block;}
+.suscriptor_detalle .foto_datos .titulo_email { word-break:break-all;display:block;}
+}
+/* Datos Personales */
+.datos_personales .lista .label { width:100px; display:inline-block;
+@include screen('mobile'){ width:70px; }
+}
+
+/* Ultima Actividad */
+.box_actividad { display:flex; border-left:1px solid $color-4; padding-left:10px; padding-bottom:20px; }
+.box_actividad:before { 
+content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #a35a29;
+    border-radius: 50%;
+    position: absolute;
+    left: 16px;
+	@include screen('mobile'){
+		
+		left:6px;
+		}
+}
+.box_actividad .info { padding-left:5px;}
+.box_actividad .info h5 { font-weight:400; font-size:1rem; color:$color-2; margin-bottom:5px;}
+

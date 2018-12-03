@@ -1,0 +1,145 @@
+/**
+ *
+ * Copyright 2016 Google Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+*/
+
+
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9000;
+}
+
+.side-nav--visible {
+  pointer-events: auto;
+}
+
+.side-nav::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.3s cubic-bezier(0,0,0.3,1);
+}
+
+.side-nav__container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  height: 100%;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.4);
+  transform: translateX(-102%);
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+.side-nav--animatable .side-nav__container {
+  transition: transform 0.13s cubic-bezier(0,0,0.3,1);
+}
+
+.side-nav--visible.side-nav--animatable .side-nav__container {
+  transition: transform 0.33s cubic-bezier(0,0,0.3,1);
+}
+
+.side-nav--visible::before {
+  opacity: 1;
+}
+
+.side-nav--visible .side-nav__container {
+  transform: none;
+}
+
+.side-nav__hide {
+     position: absolute;
+    right: 15px;
+    top: 14px;
+    background: none;
+    border: none;
+    color: #FFF;
+    /* width: 24px; */
+    /* height: 24px; */
+    padding: 0;
+    margin: 0;
+}
+.side-nav__hide span.fa { font-size:18px;}
+.side-nav__header {
+  height: 45px;
+  background:$color-n;
+  color: #FFF;
+  display: flex;
+  padding: 0;
+  align-items:flex-center;
+  font-size: 28px;
+}
+
+.side-nav__content {
+  padding-top: 32px;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.side-nav__content li {
+  line-height: 45px;
+  padding: 0;
+  font-size:16px;
+  position:relative;
+  margin-bottom:2px;
+  
+
+}
+.side-nav__content li:first-child { margin-top:2px;}
+.side-nav__content li:hover {}
+.side-nav__content li a { background:$color-4;  display:block;    padding:0 20px;}
+.side-nav__content li:focus, .side-nav__content li a:focus { outline:none;     text-decoration: none;} 
+.side-nav__content li a:after{ 
+content:"";
+display:block;
+margin:0 ;
+/*border-top:1px solid darken($color-4,0%);*/ }
+.side-nav__content li span.fa { position:absolute; right:20px; top:15px; transform:rotate(0deg); }
+.side-nav__content li span.fa.rotado { transform:rotate(180deg); transition:all 0.25s;} 
+.side-nav__content li.sin_submenu span.fa.rotado { transform:rotate(0);}
+
+.side-nav__content li.seleccionado a{ border-left:8px solid $color-2; font-weight:600;}
+.side-nav__content li.seleccionado > a{     padding-left: 15px;}
+.side-nav__content > li.seleccionado + li { }
+
+.sub_nav_mobile { padding-left:20px; display:none;}
+.sub_nav_mobile li { font-size:15px; padding-left: 5px; }
+.sub_nav_mobile li a { border-bottom:0; background:#fff;}
+.sub_nav_mobile li.seleccionado a { border-left:8px solid $color-n; background:$color-4;      padding-left: 12px;}
+.sub_nav_mobile li:not(.seleccionado) a { border-left:0;}
+.sub_nav_mobile li:not(.seleccionado) a { font-weight:400;}

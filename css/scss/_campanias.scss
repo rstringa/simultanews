@@ -1,0 +1,135 @@
+/******************* BOX PARA CAMPAñAS **********************************/
+/* Caja con columnas para Campañas */
+.box_ver_campanias { border-bottom:2px solid $color-borde-normal; border-right:2px solid $color-borde-normal;}
+.box_ver_campanias .box_columnas {display:flex;
+@include screen('mobile'){ justify-content:space-between;}
+}
+.box_ver_campanias .col_1 { width: 40px;padding-right: 10px; display:table-cell; vertical-align: top;}
+.box_ver_campanias .col_2 { width:calc(100% - 50px); display:flex;
+@include screen('mobile'){width:calc(100% - 40px); }
+
+}
+.box_ver_campanias .col_3 {    width: 20px;text-align: right; }
+.box_ver_campanias .estado_campania { text-align:right;}
+
+
+/* Parte Central de la caja */
+.box_ver_campanias .box_text_content { flex: 1 1 auto;}
+.box_ver_campanias .box_text_content.modificado_con_graficos {flex: 0 1 auto; width: 40%;}
+.box_ver_campanias .box_top_text {flex: 1 1 auto; }
+.box_ver_campanias .box_top_text .titulo { font-size:1.1rem; font-weight:600;}
+.box_ver_campanias .box_top_text .titulo a{ color:$color-1;}
+.box_ver_campanias .box_middle_info { margin-bottom:10px; font-size:0.95rem;}
+
+
+/* Estado de enviando ... */
+.box_ver_campanias .box_estado_envio {
+    flex: 0 1 500px;
+	padding:0 20px;
+	align-self:center;
+	@include screen('mobile'){ flex: 1 1 auto; padding:0; align-self:flex-start; width:100%; }
+}
+.box_ver_campanias .box_estado_envio .texto { font-size:0.95rem; color:$color-2; margin-bottom:5px;}
+/* Graficos de campaña enviada */
+.box_ver_campanias .box_graficos {
+    flex: 0 1 400px; 
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+	@include screen('mobile'){ padding:0; }
+}
+.box_ver_campanias .box_graficos .col_grafico {
+	border-right:1px solid $color-borde-normal;
+    text-align: center;
+    flex: 1 1 auto;
+	color:$color-3;		
+	}
+.box_ver_campanias .box_graficos .col_grafico .numero { font-size:1.1rem; font-weight:600;}
+.box_ver_campanias .box_graficos .col_grafico .label { font-size:0.95rem; font-weight:400;}
+
+@include screen('mobile'){ 
+.box_ver_campanias .box_graficos .col_grafico { flex: 0 1 auto; width:100%; max-width:120px; padding:0;}
+.box_ver_campanias .box_graficos .col_grafico:first-child{ padding-left:0; }
+}	
+
+.box_ver_campanias .box_graficos .col_grafico:last-child { border-right:0;}
+
+/* Estado Borrador */
+.box_ver_campanias .pasos_borrador { font-weight:600; margin-left:-3px; margin-top:3px;}
+.box_ver_campanias .pasos_borrador a { border:1px solid transparent; padding:3px 3px; color:$color-link;}
+.box_ver_campanias .pasos_borrador .actual,
+.box_ver_campanias .pasos_borrador a:hover { border:1px solid $color-borde-normal; border-radius:$redondeado-normal; padding:3px 3px;}
+
+/* Footer con El estado de una Campaña */
+
+.box_ver_campanias .estado_campania { display:block; text-align:right; margin-bottom:-15px; margin-right:-20px;
+@include screen('mobile'){  margin-bottom:-10px; margin-right:-10px; }
+
+}
+/* Footer con Icono */
+.box_footer { margin-top:-15px;
+@include screen('mobile'){   margin-top:-20px; }
+}
+.estado_campania p{ background:$color-4; display:inline-block;width:35px; height:35px; text-align:center; line-height:35px;}
+.box_ver_campanias .estado_campania .texto_estado_envio { font-size:12px; color:$color-2;  opacity:0; display:inline-block; }
+.box_ver_campanias:hover .estado_campania .texto_estado_envio { opacity:1;transition:opacity 0.50s;  }
+
+/* Box Ver Campañas en Moviles */
+@media screen and (max-width:767px){
+	.box_ver_campanias { padding:10px;}
+	.box_ver_campanias .col_1 { width:30px;}
+	.box_ver_campanias .col_2 { flex-flow:column;  }
+	.box_ver_campanias .box_graficos { 
+	    flex:0 0 auto;     
+		margin-left: 0;     
+		margin-right: -25px;
+		padding: 20px 0 0 0;
+		overflow-x: auto;
+		overflow-y: hidden;
+		max-width: 100%; }
+
+	.box_ver_campanias .box_text_content.modificado_con_graficos { width: 100%;}	
+}
+
+/* SEARCH principal*/
+.box_buscador { display:flex; flex-wrap:wrap;
+}
+.box_buscador > div{ }
+.box_buscador .box_texto { width:40%; align-self:center;}
+.box_buscador .box_campo_busqueda { width:60%; position:relative;}
+.box_buscador .box_campo_busqueda [name="accion_mostrar_filtros"] .fa { font-size:1.25rem; }
+.box_buscador .box_block { flex:1 1 100%; margin-top:0px;}
+.box_buscador .box_block > div { margin-top:20px;}
+
+/* Dropdown del SEARCH principal para los filtros */
+.box_buscador .box_filtros { width:100%; padding:20px; padding-top:30px; display:none;} 
+.box_buscador .box_filtros .box_filtros_footer { margin-top:40px;}
+.box_buscador .box_filtros .close { position:absolute; top:10px; right:20px; }
+
+
+@include screen('mobile'){ 
+.box_buscador { flex-flow:column;}
+.box_buscador .box_texto,
+.box_buscador .box_campo_busqueda { width:100%;}
+.box_tipo_campania { margin-top:10px;}
+}
+
+/* PAGINA VER DETALLE DE CAMPAña */
+/* Tab - Detalle */
+.row_lista { display:flex; flex-wrap:wrap; justify-content:flex-start; padding:0.65rem 0; border-bottom:1px solid $color-borde-normal;}
+.row_lista:last-of-type{ border-bottom:0;}
+.detalles_label { flex:0 1 300px; font-weight:600;  align-items: center; display: flex; }
+.detalles_value { flex:1 1 auto; }
+	@include screen('mobile'){	
+	.row_lista { flex-flow:column;} 
+	.detalles_label {     flex-basis: auto;}
+}
+
+.detalles_value .url_input { margin-right:1rem; width:35vw;
+	@include screen('mobile') { margin:5px 0 10px 0; width:100vw;}
+
+ }
+ /* Tab - Version Texto */ 
+.tab_txt textarea { min-height:50vh;}
+ 
+
